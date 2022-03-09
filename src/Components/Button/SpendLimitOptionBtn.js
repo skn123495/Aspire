@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
-import {BASESTYLE, COLORS} from '../../Constants';
+import {BASESTYLE, COLORS, FONTS} from '../../Constants';
 import {normalizeFont, scaleHeight, scaleWidth} from '../../Utils/responsive';
 
 const styles = StyleSheet.create({
@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     fontSize: normalizeFont(12),
     color: COLORS.GREEN,
     lineHeight: scaleHeight(18),
+    fontFamily: FONTS.AVENIR_NEXT_SEMI_BOLD,
   },
 });
 

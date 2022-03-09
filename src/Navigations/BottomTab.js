@@ -3,7 +3,7 @@ import {Image, Text} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import HomeTab from '../Screens/Home';
-import {COLORS, IMAGES} from '../Constants';
+import {COLORS, FONTS, IMAGES} from '../Constants';
 import DebitCard from '../Screens/DebitCard';
 import Payments from '../Screens/Payments';
 import Credits from '../Screens/Credit';
@@ -23,6 +23,7 @@ const TabIconLabel = focused => ({
   color: focused ? COLORS.GREEN : COLORS.GRAY_E0,
   fontSize: normalizeFont(9),
   lineHeight: scaleHeight(12),
+  fontFamily: FONTS.AVENIR_NEXT_SEMI_BOLD,
 });
 
 const BottomTab = () => {

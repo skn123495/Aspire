@@ -23,12 +23,14 @@ const styles = StyleSheet.create({
     bottom: scaleHeight(-14),
     borderRadius: scaleHeight(6),
     ...BASESTYLE.inRow,
+    justifyContent: 'center',
   },
   hideShowText: {
     fontSize: normalizeFont(12),
     lineHeight: scaleHeight(20),
     color: COLORS.GREEN,
     marginLeft: scaleWidth(6),
+    fontFamily: FONTS.AVENIR_NEXT_MEDIUM,
   },
   cardPayment: {
     width: '100%',

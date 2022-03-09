@@ -1,11 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {BASESTYLE, COLORS} from '../../Constants';
-import {
-  normalizeFont,
-  scaleHeight,
-  scaleWidth,
-  SCREEN_WIDTH,
-} from '../../Utils/responsive';
+import {BASESTYLE, COLORS, FONTS} from '../../Constants';
+import {normalizeFont, scaleHeight, scaleWidth} from '../../Utils/responsive';
 
 export const styles = StyleSheet.create({
   upperMainView: {
@@ -28,6 +23,7 @@ export const styles = StyleSheet.create({
     fontSize: normalizeFont(24),
     color: COLORS.WHITE,
     lineHeight: scaleHeight(33),
+    fontFamily: FONTS.AVENIR_NEXT_BOLD,
   },
   contentView: {
     ...BASESTYLE.flex1,
@@ -43,6 +39,7 @@ export const styles = StyleSheet.create({
     color: COLORS.DARK_BROWN,
     lineHeight: scaleHeight(19),
     marginLeft: scaleWidth(12),
+    fontFamily: FONTS.AVENIR_NEXT_MEDIUM,
   },
   dollerView: {
     width: scaleWidth(40),
@@ -55,6 +52,7 @@ export const styles = StyleSheet.create({
     fontSize: normalizeFont(12),
     color: COLORS.WHITE,
     lineHeight: scaleHeight(16),
+    fontFamily: FONTS.AVENIR_NEXT_BOLD,
   },
   showAmountView: {
     ...BASESTYLE.inRow,
@@ -68,16 +66,19 @@ export const styles = StyleSheet.create({
     color: COLORS.DARK_BROWN,
     lineHeight: scaleHeight(33),
     marginLeft: scaleHeight(10),
+    fontFamily: FONTS.AVENIR_NEXT_MEDIUM,
   },
   weeklyMeans: {
     fontSize: normalizeFont(12),
     color: COLORS.GRAY_D6,
     lineHeight: scaleHeight(18),
     marginTop: scaleHeight(6),
+    fontFamily: FONTS.AVENIR_NEXT_REGULAR,
   },
   customStyle: {
     width: scaleWidth(300),
     marginBottom: scaleHeight(24),
     alignSelf: 'center',
+    fontFamily: FONTS.AVENIR_NEXT_SEMI_BOLD,
   },
 });
