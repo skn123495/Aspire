@@ -8,7 +8,7 @@ import DebitCard from '../Screens/DebitCard';
 import Payments from '../Screens/Payments';
 import Credits from '../Screens/Credit';
 import Profile from '../Screens/Profile';
-import {normalizeFont, scaleHeight} from '../Utils/responsive';
+import {dynamicSize, normalizeFont, scaleHeight} from '../Utils/responsive';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {hasNotch} from 'react-native-device-info';
 
@@ -17,6 +17,8 @@ const Tab = createBottomTabNavigator();
 const TabIconColor = focused => ({
   tintColor: focused ? COLORS.GREEN : COLORS.GRAY_E0,
   resizeMode: 'contain',
+  width: dynamicSize(22),
+  height: dynamicSize(22),
 });
 
 const TabIconLabel = focused => ({
